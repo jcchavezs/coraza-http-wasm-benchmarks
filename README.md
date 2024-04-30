@@ -45,33 +45,33 @@ go run coraza/main.go
 
 ```shell
 Concurrency Level:      100
-Time taken for tests:   9.784 seconds
+Time taken for tests:   7.591 seconds
 Complete requests:      5000
 Failed requests:        0
 Total transferred:      60645000 bytes
 HTML transferred:       59195000 bytes
-Requests per second:    511.02 [#/sec] (mean)
-Time per request:       195.686 [ms] (mean)
-Time per request:       1.957 [ms] (mean, across all concurrent requests)
-Transfer rate:          6052.92 [Kbytes/sec] received
+Requests per second:    658.65 [#/sec] (mean)
+Time per request:       151.826 [ms] (mean)
+Time per request:       1.518 [ms] (mean, across all concurrent requests)
+Transfer rate:          7801.52 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    0   0.6      0       6
-Processing:    18  214 160.3    191    1246
-Waiting:       12  211 158.1    188    1246
-Total:         18  214 160.3    191    1246
+Connect:        0    0   1.0      0       9
+Processing:    14  150 115.5    128     874
+Waiting:        8  148 113.4    126     874
+Total:         14  150 115.5    128     874
 
 Percentage of the requests served within a certain time (ms)
-  50%    191
-  66%    249
-  75%    285
-  80%    307
-  90%    388
-  95%    511
-  98%    659
-  99%    829
- 100%   1246 (longest request)
+  50%    128
+  66%    173
+  75%    207
+  80%    228
+  90%    287
+  95%    386
+  98%    495
+  99%    542
+ 100%    874 (longest request)
  ```
 
 ```shell
@@ -81,33 +81,33 @@ go run coraza-http-wasm/main.go
 
 ```shell
 Concurrency Level:      100
-Time taken for tests:   75.901 seconds
+Time taken for tests:   72.779 seconds
 Complete requests:      5000
 Failed requests:        0
 Total transferred:      60645000 bytes
 HTML transferred:       59195000 bytes
-Requests per second:    65.88 [#/sec] (mean)
-Time per request:       1518.020 [ms] (mean)
-Time per request:       15.180 [ms] (mean, across all concurrent requests)
-Transfer rate:          780.27 [Kbytes/sec] received
+Requests per second:    68.70 [#/sec] (mean)
+Time per request:       1455.582 [ms] (mean)
+Time per request:       14.556 [ms] (mean, across all concurrent requests)
+Transfer rate:          813.75 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    0   0.9      0      12
-Processing:    17 1515 6871.5    218   66850
-Waiting:       17 1509 6860.4    216   66850
-Total:         17 1516 6872.1    218   66856
+Connect:        0    0   0.9      0      31
+Processing:    16 1453 6702.5    332   69471
+Waiting:       16 1441 6684.1    329   69471
+Total:         16 1453 6703.0    332   69477
 
 Percentage of the requests served within a certain time (ms)
-  50%    218
-  66%    342
-  75%    491
-  80%    628
-  90%   1910
-  95%   2976
-  98%  31504
-  99%  45067
- 100%  66856 (longest request)
+  50%    332
+  66%    488
+  75%    607
+  80%    710
+  90%   1195
+  95%   2011
+  98%  22645
+  99%  45749
+ 100%  69477 (longest request)
  ```
 
 ## Benchmark calls
